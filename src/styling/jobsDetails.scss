@@ -1,0 +1,131 @@
+.companyData {
+  //   margin: 50px;
+  width: 90%;
+  height: 150px;
+  padding: 30px;
+  background-color: hsl(0deg 0% 100%);
+  margin: 5%;
+  border-radius: 15px;
+  box-shadow: 8px 8px 30px 3px rgba(0, 0, 0, 0.452);
+}
+
+.companyData * {
+  float: left;
+}
+
+.companyInfo {
+  grid-area: info;
+}
+
+.jobPosition {
+  grid-area: position;
+  margin: 10px 0 15px 0;
+  color: hsl(180, 29%, 50%);
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.jobFeatures {
+  grid-area: features;
+  color: hsl(180, 6%, 42%);
+  font-weight: bolder;
+}
+
+.companyDetails {
+  margin-left: 30px;
+  display: grid;
+  grid-template-areas: "info" "position" "features";
+  word-spacing: 3px;
+}
+
+.jobRoles {
+  float: right;
+}
+
+.companyLogo {
+  width: 110px;
+  position: relative;
+  bottom: 10px;
+}
+
+.companyName {
+  color: hsl(180, 29%, 50%);
+  font-size: large;
+  font-weight: bolder;
+  margin-right: 10px;
+}
+
+.featured {
+  background-color: hsl(180, 8%, 52%);
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: hsl(33, 36%, 95%);
+  font-weight: bolder;
+}
+
+.new {
+  background-color: hsl(180, 29%, 50%);
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: hsl(33, 36%, 95%);
+  font-weight: bolder;
+  margin: 0 10px;
+}
+
+.eachRole {
+  padding: 9px;
+  margin: 8px;
+  background: hsl(180, 31%, 95%);
+  border-radius: 10px;
+  color: hsl(180, 29%, 50%);
+  cursor: pointer;
+  position: relative;
+  top: 13px;
+}
+
+.eachRole:hover {
+  background: hsl(180, 29%, 50%);
+  color: hsl(180, 31%, 95%);
+}
+
+//  ******************************** responsive ***********************************
+
+@media only screen and (max-width: 1000px) {
+  .companyData {
+    min-height: 420px;
+    margin-top: 90px;
+    padding-top: 0;
+  }
+
+  .companyData:first-child {
+    margin-top: 130px;
+  }
+
+  .companyInfo {
+    width: 100%;
+  }
+
+  .jobFeatures {
+    width: 90%;
+    padding-bottom: 20px;
+    border-bottom: 2px solid hsla(0, 0%, 42%, 0.562);
+  }
+  .companyDetails {
+    position: relative;
+    bottom: 25px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .companyLogo {
+    bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .companyData {
+    min-height: 440px;
+    margin-top: 90px;
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,54 @@
+.header{
+    height: 165px;
+    background: hsl(180deg 30% 47%) url('../../public/images/bg-header-desktop.svg') no-repeat;
+    background-size: cover;
+}
+.roleName, .removeIcon, .headerRoles{
+    display: block;
+    float: left;
+}
+
+.chosenRoles{
+    min-height: 40%;
+    padding: 1.2%;
+    width: 70%;
+    background-color: hsl(0deg 0% 100%);
+    border-radius: 4px;
+    position: relative;
+    top: 80%;
+    left: 15%;
+    box-shadow: 8px 8px 30px 3px rgb(0 0 0 / 38%);
+}
+
+.headerRoles{
+    background-color: hsl(180, 31%, 95%);
+    height: 25px;
+    border-radius: 7px;
+    position: relative;
+    margin: 4px 8px;
+}
+
+.removeIcon{
+    background-color: hsl(180, 29%, 50%);
+    padding: 7%;
+    height:100% ;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.roleName{
+    vertical-align:middle;
+    padding: 5px;
+    color: hsl(180, 29%, 50%);
+}
+
+.clearAll{
+    color: hsl(180, 29%, 50%);
+    float: right;
+    cursor: pointer;
+    margin-top: 0.7%;
+}
+
+.clearAll:hover{
+    text-decoration: underline;
+}

@@ -21,7 +21,7 @@ class JobsDetails extends Component {
 
 
     render() {
-        return <> {this.props.job &&
+        return <> {this.props.filtration(this.state.roles) &&
             <div className='companyData'>
                 <img className='companyLogo' src={this.props.job.logo} />
                 <div className='companyDetails' >
